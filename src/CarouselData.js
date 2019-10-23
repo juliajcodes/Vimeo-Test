@@ -16,7 +16,7 @@ const data = {
       description:
         "A Swiss Family takes a ski vacation into trouble when the father, a titular decent man, finds himself in a series of moral quandaries.",
       filmImage:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBKHT7bG3k_qsXRf6Xv8giuIY5r_vI6gjepJoW2zeN5CjwJYSG",
+        "http://de.web.img3.acsta.net/pictures/15/12/10/17/32/536632.jpg",
       imgAlt: "nicht-passiert",
       link: "https://vimeo.com/155591000"
     },

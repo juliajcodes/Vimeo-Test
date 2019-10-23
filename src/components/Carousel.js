@@ -73,16 +73,14 @@ class Carousel extends Component {
     super(props);
     this.state = {
       movies: data.movies,
-      movie: data.movies[0],
-      background: data.movies[0].filmImage
+      movie: data.movies[0]
     };
   }
   nextMovie = () => {
     // when next button is pressed
     const newIndex = this.state.movie.index + 1;
     this.setState({
-      movie: data.movies[newIndex],
-      background: data.movies[newIndex].filmImage
+      movie: data.movies[newIndex]
     });
   };
 
@@ -90,14 +88,12 @@ class Carousel extends Component {
     // when previous button is pressed
     const newIndex = this.state.movie.index - 1;
     this.setState({
-      movie: data.movies[newIndex],
-      background: data.movies[newIndex].filmImage
+      movie: data.movies[newIndex]
     });
   };
 
   render() {
     const { movies, movie } = this.state;
-    const { background } = this.state;
     return (
       <CarouselContainer>
         <SliderWrapper
@@ -110,7 +106,7 @@ class Carousel extends Component {
             <MapWrap key={"wrapper" + movie.index}>
               <CarouselBackWrapper>
                 <CarouselBackground
-                  style={{ backgroundImage: `url(${background})` }}
+                  style={{ backgroundImage: `url(${movie.filmImage})` }}
                 />
               </CarouselBackWrapper>
               <Button
