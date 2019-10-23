@@ -5,10 +5,10 @@ const RowContent = styled.div`
   display: flex;
   width: 100%;
   padding: 20px;
-  justify-content: space-between ;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: ${props => props.flexDirection || 'row'};
+  flex-direction: ${props => props.flexDirection || "row"};
 
   @media only screen and (min-width: 1250px) {
     flex-wrap: nowrap;
@@ -33,19 +33,19 @@ const Column = styled.div`
     width: 47%;
   }
 
-  h1, p{
+  h1,
+  p {
     margin: 5px 0;
   }
 
-  p{
+  p {
     line-height: 20px;
   }
 
-  h1{
+  h1 {
     text-transform: uppercase;
   }
 `;
-
 
 const Image = styled.img`
   width: 100%;
@@ -69,7 +69,7 @@ function Row(props) {
         <p>{props.paragraphText}</p>
       </Column>
       <Column>
-        <Image src={props.imageSource} />
+        <Image src={props.imageSource} alt={props.altText} />
       </Column>
     </RowContent>
   );

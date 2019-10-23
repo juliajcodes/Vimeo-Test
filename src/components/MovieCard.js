@@ -110,11 +110,11 @@ const MovieDescription = styled.div`
 `;
 
 const MovieCard = ({ movie }) => {
-  const { title, description, filmImage, link } = movie;
+  const { title, description, filmImage, imgAlt, link } = movie;
   return (
     <DisplayInline>
       <MovieContent>
-        <MovieImage src={`${filmImage}`} alt={title} />
+        <MovieImage src={`${filmImage}`} alt={imgAlt} />
         <MovieDescription>
           <h1>{title}</h1>
           <p>{description}</p>
